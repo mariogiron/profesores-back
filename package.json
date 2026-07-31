@@ -1,0 +1,22 @@
+{
+    "name": "academia-api",
+    "version": "3.0.0",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "node --env-file-if-exists=.env index.js",
+        "dev": "node --watch --env-file=.env index.js",
+        "test": "node --env-file=.env --test"
+    },
+    "author": "Mario Girón Martín",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.0.0",
+        "mongoose": "^9.7.4"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.5.6",
+        "supertest": "^7.1.1"
+    }
+}

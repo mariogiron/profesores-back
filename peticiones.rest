@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/estudiantes
+
+###
+GET http://localhost:3000/api/estudiantes/6a592fadf0dcb846b10d424c
+
+###
+POST http://localhost:3000/api/estudiantes
+Content-Type: application/json
+
+{
+    "apellidos": "Gómez",
+    "edad": 34,
+    "email": "lauragomez@gmail.com"
+}  
+
+###
+PUT http://localhost:3000/api/estudiantes/6a592fadf0dcb846b10d424c
+Content-Type: application/json
+
+{
+    "curso": "6a5a530b7e7d442110b23e7e"
+}
+
+###
+DELETE http://localhost:3000/api/estudiantes/6a5a4f01a9b2d753a3b8bbfe
+
+###
+POST http://localhost:3000/api/cursos
+Content-Type: application/json  
+
+{
+    "nombre": "Programación en JavaScript",
+    "descripcion": "Curso de programación en JavaScript",
+    "plazas": 30
+}
